@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr">
+<!--
+<head>
+<title>Poomurugan</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+</body>
+<header>
+<div class="main">
+<div class="logo">
+<img src="logo.png">
+</>
+<ul>
+<li class="active"><a href="#">Home</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contacts</a></li>
+</ul>
+</div class="title">
+<h1>Life is to live</h1>
+</div>
+</header>
+</body>
+-->
+<head>
+<meta charset="utf-8">
+<title> Poomurugan </title>
+<!--Note link is above also twice used-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<a href="welcome.html">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+WELCOME
+</a>
+<!--image slider starts-->
+<div class="slider">
+<div class="slides">
+<!--radio button start-->
+<input type="radio" name="radio.btn" id="radio1">
+<input type="radio" name="radio.btn" id="radio2">
+<input type="radio" name="radio.btn" id="radio3">
+<input type="radio" name="radio.btn" id="radio4">
+<!--radio button end-->
+<!--slide images start-->
+<div class="slide first">
+<img src="s1.jpg"alt="">
+</div>
+<div class="slide">
+<img src="s2.jpg"alt="">
+</div>
+<div class="slide">
+<img src="s3.jpg"alt="">
+</div>
+<div class="slide">
+<img src="s4.jpg"alt="">
+</div>
+<!--slide images end-->
+<!--Automatic navigation start-->
+<div class="navigation-auto">
+    <div class="auto-btn1"></div>
+	<div class="auto-btn2"></div>
+	<div class="auto-btn3"></div>
+	<div class="auto-btn4"></div>
+</div>
+<!--Automatic navigation end-->
+</div>
+<!--Manual navigation starts-->
+<div class="navigation-manual">
+<label for="radio1" class="manual-btn"></label>
+<label for="radio2" class="manual-btn"></label>
+<label for="radio3" class="manual-btn"></label>
+<label for="radio4" class="manual-btn"></label>
+</div>
+<!--Manual navigation end-->
+</div>
+<!--image slider end-->
+<script type="text/javascript">
+var counter =1;
+setInterval(function(){
+document.getElementById('radio'+counter).checked=true;
+counter++;
+if (counter > 4){
+counter = 1;
+}
+},5000);
+</script>
+</body>
+</html>
